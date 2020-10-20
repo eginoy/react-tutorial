@@ -7,7 +7,7 @@ import './index.css';
       return(
           <button
             className='square'
-            onClick={props.onClick()}
+            onClick={props.onClick}
           >
               {props.value}
           </button>
@@ -19,13 +19,17 @@ import './index.css';
         super(props)
         this.state = {
             squares: Array(9).fill(null),
+            xIsNext: true,
         }
     }
 
     handleClick(i){
         const squares = this.state.squares.slice();
-        squares[i] = '☓';
-        this.setState({squares: squares});
+        squares[i] = this.state.xIsNext ? '☓' : '〇';
+        this.setState({
+            squares: squares,
+            xIsNext: !this.state.xIsNext
+        });
     }
 
     renderSquare(i) {
@@ -36,7 +40,7 @@ import './index.css';
     }
   
     render() {
-      const status = 'Next player: X';
+      const status = 'Next player: ' + (this.state.xIsNext ? '☓' : '〇') ;
   
       return (
         <div>
