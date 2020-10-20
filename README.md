@@ -1,3 +1,6 @@
+[React公式チュートリアル](https://ja.reactjs.org/tutorial/tutorial.html)をハンズオン形式で行ったリポジトリ。  
+以下テンプレート
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
