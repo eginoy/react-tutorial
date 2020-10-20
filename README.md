@@ -1,5 +1,13 @@
 [React公式チュートリアル](https://ja.reactjs.org/tutorial/tutorial.html)をハンズオン形式で行ったリポジトリ。  
-以下テンプレート
+tutorialサンプルプログラムへの機能追加課題  
+- [ ] 履歴内のそれぞれの着手の位置を (col, row) というフォーマットで表示する。
+- [ ] 着手履歴のリスト中で現在選択されているアイテムをボールドにする。
+- [ ] Boardでマス目を並べる部分を、ハードコーディングではなく2つのループを使用するように書き換える。
+- [ ] 着手履歴のリストを昇順・降順いずれでも並べかえられるよう、トグルボタンを追加する。
+- [ ] どちらかが勝利した際に、勝利につながった3つのマス目をハイライトする。
+- [ ] どちらも勝利しなかった場合、結果が引き分けになったというメッセージを表示する。
+
+以下create-react-appテンプレート
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
